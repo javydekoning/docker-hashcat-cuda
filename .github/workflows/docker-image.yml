@@ -10,15 +10,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Build and push Docker images
+      - name: Build and push opencl Docker image
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: javydekoning/hashcat
-          tags: opencl
+          tags: opencl,latest
           dockerfile: opencl/Dockerfile
-      - name: Build and push Docker images
+      - name: Build and push cuda Docker image
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
