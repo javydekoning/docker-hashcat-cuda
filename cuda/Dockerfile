@@ -1,4 +1,4 @@
-FROM nvidia/cuda:latest
+FROM nvidia/cuda:11.2.0-devel
 
 LABEL com.nvidia.volumes.needed="nvidia_driver"
 
