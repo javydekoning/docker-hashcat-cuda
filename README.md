@@ -17,3 +17,5 @@ nvidia-docker run javydekoning/hashcat:cuda hashcat -b
 ```
 nvidia-docker run javydekoning/hashcat:opencl hashcat -b
 ```
+
+Used for benchmarking [on AWS](https://github.com/javydekoning/aws-hashcat)
