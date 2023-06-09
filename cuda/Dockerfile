@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.2.0-devel
+FROM nvidia/cuda:12.1.1-devel-ubuntu22.04
 
 LABEL com.nvidia.volumes.needed="nvidia_driver"
 

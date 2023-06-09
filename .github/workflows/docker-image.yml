@@ -21,7 +21,7 @@ jobs:
           tags: opencl,latest
           dockerfile: opencl/Dockerfile
       - name: Build and push cuda Docker image
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v4
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
