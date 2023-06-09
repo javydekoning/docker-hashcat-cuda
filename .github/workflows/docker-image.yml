@@ -31,6 +31,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          file: ./cuda/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
@@ -40,6 +41,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          file: ./opencl/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
