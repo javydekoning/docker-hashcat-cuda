@@ -6,13 +6,13 @@
 ## cuda
 
 ```
-nvidia-docker run javydekoning/hashcat:cuda hashcat -b
+nvidia-docker run ghcr.io/javydekoning/hashcat:cuda hashcat -b
 ```
 
 ## opencl
 
 ```
-nvidia-docker run javydekoning/hashcat:opencl hashcat -b
+nvidia-docker run ghcr.io/javydekoning/hashcat:opencl hashcat -b
 ```
 
 [Used for benchmarking](https://github.com/javydekoning/aws-hashcat)
